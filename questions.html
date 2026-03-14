@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小智AI机器人 · 答辩训练</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>小智AI机器人</h1>
+            </div>
+            <p class="subtitle">答辩训练系统 · 100道实战问题</p>
+        </header>
+
+        <nav class="main-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>首页</span>
+            </a>
+            <a href="introduction.html" class="nav-item">
+                <i class="fas fa-book"></i>
+                <span>项目介绍</span>
+            </a>
+            <a href="questions.html" class="nav-item active">
+                <i class="fas fa-question-circle"></i>
+                <span>答辩训练</span>
+            </a>
+            <a href="demo.html" class="nav-item">
+                <i class="fas fa-microphone"></i>
+                <span>演示方案</span>
+            </a>
+        </nav>
+
+        <nav class="category-nav">
+            <div class="nav-item" data-category="basic">
+                <i class="fas fa-lightbulb"></i>
+                <span>基础概念</span>
+                <span class="count">15</span>
+            </div>
+            <div class="nav-item" data-category="tech">
+                <i class="fas fa-cogs"></i>
+                <span>技术原理</span>
+                <span class="count">20</span>
+            </div>
+            <div class="nav-item" data-category="hardware">
+                <i class="fas fa-microchip"></i>
+                <span>硬件相关</span>
+                <span class="count">15</span>
+            </div>
+            <div class="nav-item" data-category="software">
+                <i class="fas fa-code"></i>
+                <span>软件相关</span>
+                <span class="count">15</span>
+            </div>
+            <div class="nav-item" data-category="application">
+                <i class="fas fa-rocket"></i>
+                <span>应用场景</span>
+                <span class="count">15</span>
+            </div>
+            <div class="nav-item" data-category="innovation">
+                <i class="fas fa-lightbulb-on"></i>
+                <span>创新改进</span>
+                <span class="count">10</span>
+            </div>
+            <div class="nav-item" data-category="defense">
+                <i class="fas fa-microphone"></i>
+                <span>答辩技巧</span>
+                <span class="count">10</span>
+            </div>
+        </nav>
+
+        <main>
+            <section id="questions-container" class="questions-section">
+                <div class="section-header">
+                    <h2 id="category-title"><i class="fas fa-lightbulb"></i> 基础概念</h2>
+                    <p class="section-desc">选择一个分类开始学习</p>
+                </div>
+                <div class="questions-list" id="questions-list"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p><i class="fas fa-heart"></i> 祝答辩顺利，取得优异成绩！</p>
+        </footer>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

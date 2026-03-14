@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小智AI机器人 · 项目介绍</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>小智AI机器人</h1>
+            </div>
+            <p class="subtitle">项目详细介绍</p>
+        </header>
+
+        <nav class="main-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>首页</span>
+            </a>
+            <a href="introduction.html" class="nav-item active">
+                <i class="fas fa-book"></i>
+                <span>项目介绍</span>
+            </a>
+            <a href="questions.html" class="nav-item">
+                <i class="fas fa-question-circle"></i>
+                <span>答辩训练</span>
+            </a>
+            <a href="demo.html" class="nav-item">
+                <i class="fas fa-microphone"></i>
+                <span>演示方案</span>
+            </a>
+        </nav>
+
+        <main>
+            <section class="intro-section">
+                <h2><i class="fas fa-info-circle"></i> 项目概述</h2>
+                <div class="content-card">
+                    <p><strong>小智AI聊天机器人</strong>是一个开源的智能语音交互终端项目，基于ESP32系列芯片开发，支持多种开发板（ESP32-S3、ESP32-C3、ESP32）。</p>
+                    <p>本项目完全开源，提供完整的固件源码、DIY教程、配置指南，适合个人学习、教育展示、商业应用。</p>
+                </div>
+
+                <h2><i class="fas fa-microchip"></i> 硬件规格</h2>
+                <div class="content-card">
+                    <h3><i class="fas fa-star"></i> 我们使用的配置：立创ESP32-S3开发板</h3>
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-cog"></i></div>
+                            <div class="spec-title">主控芯片</div>
+                            <div class="spec-value">ESP32-S3 (乐鑫)</div>
+                            <div class="spec-desc">双核Xtensa LX7处理器，主频240MHz</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-memory"></i></div>
+                            <div class="spec-title">存储配置</div>
+                            <div class="spec-value">512KB SRAM + Flash</div>
+                            <div class="spec-desc">充足的内存运行语音处理和AI模型</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-wifi"></i></div>
+                            <div class="spec-title">网络连接</div>
+                            <div class="spec-value">WiFi + 蓝牙5.0</div>
+                            <div class="spec-desc">支持2.4GHz WiFi，BLE低功耗蓝牙</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-volume-up"></i></div>
+                            <div class="spec-title">音频接口</div>
+                            <div class="spec-value">I2S接口</div>
+                            <div class="spec-desc">专业音频处理，支持麦克风和扬声器</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-microphone"></i></div>
+                            <div class="spec-title">麦克风模块</div>
+                            <div class="spec-value">I2S数字麦克风</div>
+                            <div class="spec-desc">高灵敏度，抗干扰能力强</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-speaker"></i></div>
+                            <div class="spec-title">扬声器模块</div>
+                            <div class="spec-value">I2S数字扬声器</div>
+                            <div class="spec-desc">内置功放，音质清晰</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2><i class="fas fa-bolt"></i> 核心功能</h2>
+                <div class="content-card">
+                    <div class="function-list">
+                        <div class="function-item">
+                            <div class="function-icon"><i class="fas fa-bell"></i></div>
+                            <div class="function-content">
+                                <h4>语音唤醒</h4>
+                                <p>默认唤醒词"小智小智"，可自定义（如"你好小智"、"小智同学"）。本地检测，响应迅速（<500ms）</p>
+                            </div>
+                        </div>
+                        <div class="function-item">
+                            <div class="function-icon"><i class="fas fa-comment-dots"></i></div>
+                            <div class="function-content">
+                                <h4>语音识别 (ASR)</h4>
+                                <p>集成阿里云/讯飞语音识别，将语音转换为文字，支持中文，识别准确率高</p>
+                            </div>
+                        </div>
+                        <div class="function-item">
+                            <div class="function-icon"><i class="fas fa-brain"></i></div>
+                            <div class="function-content">
+                                <h4>AI对话 (LLM)</h4>
+                                <p>接入通义千问、文心一言、豆包等大模型，支持多轮对话、人设切换、创意生成</p>
+                            </div>
+                        </div>
+                        <div class="function-item">
+                            <div class="function-icon"><i class="fas fa-music"></i></div>
+                            <div class="function-content">
+                                <h4>语音合成 (TTS)</h4>
+                                <p>多种音色可选（标准音、儿童音、儿童女音），支持声音复刻（自定义声音）</p>
+                            </div>
+                        </div>
+                        <div class="function-item">
+                            <div class="function-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="function-content">
+                                <h4>联网查询</h4>
+                                <p>实时天气、新闻、百科，通过MCP接入联网搜索功能</p>
+                            </div>
+                        </div>
+                        <div class="function-item">
+                            <div class="function-icon"><i class="fas fa-plug"></i></div>
+                            <div class="function-content">
+                                <h4>GPIO控制</h4>
+                                <p>通过语音控制LED灯、继电器等外设，支持定时提醒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2><i class="fas fa-sitemap"></i> 技术架构</h2>
+                <div class="content-card">
+                    <div class="architecture-diagram">
+                        <div class="layer hardware">
+                            <h4><i class="fas fa-microchip"></i> 硬件层</h4>
+                            <div class="layer-content">
+                                <span>ESP32-S3主控</span>
+                                <span>I2S麦克风</span>
+                                <span>I2S扬声器</span>
+                                <span>WiFi/蓝牙模块</span>
+                                <span>GPIO/I2C/SPI接口</span>
+                            </div>
+                        </div>
+                        <div class="layer firmware">
+                            <h4><i class="fas fa-file-code"></i> 固件层</h4>
+                            <div class="layer-content">
+                                <span>FreeRTOS操作系统</span>
+                                <span>语音处理模块</span>
+                                <span>网络通信模块</span>
+                                <span>大模型调用模块</span>
+                                <span>OTA升级模块</span>
+                            </div>
+                        </div>
+                        <div class="layer service">
+                            <h4><i class="fas fa-cloud"></i> 服务层</h4>
+                            <div class="layer-content">
+                                <span>语音识别ASR</span>
+                                <span>语音合成TTS</span>
+                                <span>大模型API</span>
+                                <span>MCP联网查询</span>
+                                <span>配置服务器</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="flow-description">用户说话 → 麦克风采集 → 唤醒词检测 → 语音识别 → 发送给大模型 → AI生成回答 → 语音合成 → 扬声器播放</p>
+                </div>
+
+                <h2><i class="fas fa-tools"></i> 配置流程</h2>
+                <div class="content-card">
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>烧录固件</h4>
+                                <p>使用Web端烧录工具或ESP-IDF编译，将固件烧录到ESP32-S3开发板</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>连接WiFi</h4>
+                                <p>手机连接设备热点，打开xiaozhi.me配置页面，输入WiFi密码</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>配置API Key</h4>
+                                <p>输入通义千问等大模型的API Key，完成AI对话功能配置</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>测试对话</h4>
+                                <p>说"小智小智"唤醒，然后提问，测试语音识别和AI回答效果</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2><i class="fas fa-dollar-sign"></i> 成本分析</h2>
+                <div class="content-card">
+                    <div class="cost-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>项目</th>
+                                    <th>价格</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>立创ESP32-S3开发板</td>
+                                    <td>50-80元</td>
+                                </tr>
+                                <tr>
+                                    <td>I2S麦克风模块</td>
+                                    <td>15-20元</td>
+                                </tr>
+                                <tr>
+                                    <td>I2S扬声器模块</td>
+                                    <td>15-20元</td>
+                                </tr>
+                                <tr>
+                                    <td>面包板 + 杜邦线</td>
+                                    <td>20元</td>
+                                </tr>
+                                <tr>
+                                    <td>电池模块（可选）</td>
+                                    <td>20-30元</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>硬件总计</strong></td>
+                                    <td><strong>120-200元</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>AI API调用（运营成本）</td>
+                                    <td>0.5-1元/千次对话</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h2><i class="fas fa-rocket"></i> 应用场景</h2>
+                <div class="content-card">
+                    <div class="scenarios-grid">
+                        <div class="scenario-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>教育学习</h4>
+                            <p>英语口语练习、作文批改、知识问答、学科辅导</p>
+                        </div>
+                        <div class="scenario-card">
+                            <i class="fas fa-home"></i>
+                            <h4>生活助手</h4>
+                            <p>天气查询、新闻播报、定时提醒、智能家居控制</p>
+                        </div>
+                        <div class="scenario-card">
+                            <i class="fas fa-gamepad"></i>
+                            <h4>娱乐互动</h4>
+                            <p>讲故事、猜谜语、脑筋急转弯、聊天陪伴</p>
+                        </div>
+                        <div class="scenario-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>技术学习</h4>
+                            <p>编程练习、硬件调试、物联网项目学习</p>
+                        </div>
+                        <div class="scenario-card">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h4>教育展示</h4>
+                            <p>科技展览、创新大赛、STEM课程展示</p>
+                        </div>
+                        <div class="scenario-card">
+                            <i class="fas fa-gift"></i>
+                            <h4>创意礼品</h4>
+                            <p>太空人故事机改造、毛绒机器人、定制礼物</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2><i class="fas fa-lightbulb"></i> 创新亮点</h2>
+                <div class="content-card">
+                    <div class="innovation-list">
+                        <div class="innovation-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>完全开源</h4>
+                                <p>固件源码公开，可自定义修改，不闭源</p>
+                            </div>
+                        </div>
+                        <div class="innovation-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>易于DIY</h4>
+                                <p>面包板方案，成本仅120-200元，教程丰富</p>
+                            </div>
+                        </div>
+                        <div class="innovation-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>可扩展性强</h4>
+                                <p>支持摄像头、LCD、传感器等多种外设扩展</p>
+                            </div>
+                        </div>
+                        <div class="innovation-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>活跃社区</h4>
+                                <p>官方知识库、QQ群、GitHub开源项目，技术支持完善</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p><i class="fas fa-heart"></i> 小智AI，让AI触手可及！</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

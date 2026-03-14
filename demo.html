@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小智AI机器人 · 演示方案</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>小智AI机器人</h1>
+            </div>
+            <p class="subtitle">现场演示方案</p>
+        </header>
+
+        <nav class="main-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>首页</span>
+            </a>
+            <a href="introduction.html" class="nav-item">
+                <i class="fas fa-book"></i>
+                <span>项目介绍</span>
+            </a>
+            <a href="questions.html" class="nav-item">
+                <i class="fas fa-question-circle"></i>
+                <span>答辩训练</span>
+            </a>
+            <a href="demo.html" class="nav-item active">
+                <i class="fas fa-microphone"></i>
+                <span>演示方案</span>
+            </a>
+        </nav>
+
+        <main>
+            <section class="demo-section">
+                <h2><i class="fas fa-microphone"></i> 现场演示方案</h2>
+                <p class="intro-text">以下演示方案适合表演性质的现场展示，建议选择2-3个组合使用，总时长10-15分钟</p>
+
+                <div class="demo-tabs">
+                    <button class="tab-btn active" data-tab="interactive">情景对话</button>
+                    <button class="tab-btn" data-tab="game">互动游戏</button>
+                    <button class="tab-btn" data-tab="creative">创意创作</button>
+                    <button class="tab-btn" data-tab="practical">实用功能</button>
+                    <button class="tab-btn" data-tab="openclaw">OpenClaw增强</button>
+                </div>
+
+                <div class="tab-content active" id="interactive">
+                    <h3><i class="fas fa-comments"></i> 情景对话演示</h3>
+
+                    <div class="demo-card">
+                        <div class="demo-number">1</div>
+                        <h4>小智是"英语外教"</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，从现在开始你是我的英语外教，用简单英语跟我对话"</div>
+                                <div class="step">小智："Okay! Let's practice English together. What's your name?"</div>
+                                <div class="step">学生："My name is Wang. Nice to meet you!"</div>
+                                <div class="step">小智："Nice to meet you too, Wang! How are you today?"</div>
+                                <div class="step">...继续对话...</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "大家看，小智现在是我的英语外教。它可以用英语和我对话，纠正发音，帮助练习口语。而且，它非常有耐心，不会觉得烦！"
+                            </div>
+                            <div class="demo-highlights">
+                                <strong>亮点：</strong>
+                                <span class="tag">展示AI的人设切换能力</span>
+                                <span class="tag">实用性强（英语学习）</span>
+                                <span class="tag">互动自然，有温度</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-number">2</div>
+                        <h4>小智是"故事大王"</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，给我讲一个有趣的故事"</div>
+                                <div class="step">小智：（开始讲一个原创故事）</div>
+                                <div class="step">学生：（讲到一半）"等等！我要给故事加个角色，一只会飞的猫！"</div>
+                                <div class="step">小智："好，那故事变成这样了..."（继续讲，加入新角色）</div>
+                                <div class="step">学生："现在让这只猫变成主角！"</div>
+                                <div class="step">小智：（调整故事情节）</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智的创意能力很强！我可以随时打断它，给它提要求，它会立刻调整故事。这展示了AI的创造力，也是未来教育的重要方向。"
+                            </div>
+                            <div class="demo-highlights">
+                                <strong>亮点：</strong>
+                                <span class="tag">展示创意生成能力</span>
+                                <span class="tag">强互动，学生参与创作</span>
+                                <span class="tag">娱乐性强，吸引观众</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-number">3</div>
+                        <h4>小智是"诗词大会冠军"</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，你是诗词大会冠军，我们来玩飞花令吧！"</div>
+                                <div class="step">小智："好！请出题。"</div>
+                                <div class="step">学生："主题是'月'，每句诗都要带'月'字。"</div>
+                                <div class="step">小智："床前明月光，疑是地上霜。到你了！"</div>
+                                <div class="step">学生："明月几时有，把酒问青天。"</div>
+                                <div class="step">小智："海上生明月，天涯共此时。"</div>
+                                <div class="step">...继续对诗...</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智不仅知识渊博，还能实时互动。我们的飞花令对了好几轮，它都能接上。这说明AI在知识储备和实时对话上已经非常成熟。"
+                            </div>
+                            <div class="demo-highlights">
+                                <strong>亮点：</strong>
+                                <span class="tag">展示知识库能力</span>
+                                <span class="tag">文化底蕴，有品位</span>
+                                <span class="tag">对话流畅，反应快</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="game">
+                    <h3><i class="fas fa-gamepad"></i> 互动游戏演示</h3>
+
+                    <div class="demo-card">
+                        <div class="demo-number">4</div>
+                        <h4>脑筋急转弯大赛</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，我们来玩脑筋急转弯吧！"</div>
+                                <div class="step">小智："好！我先出题：什么东西越洗越脏？"</div>
+                                <div class="step">学生："水！"</div>
+                                <div class="step">小智："对了！该你了！"</div>
+                                <div class="step">学生："什么东西早上四条腿，中午两条腿，晚上三条腿？"</div>
+                                <div class="step">小智："人！"</div>
+                                <div class="step">...继续PK...</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智不是只会问答，它还能陪我们玩游戏！这种寓教于乐的方式，让学习变得更有趣。"
+                            </div>
+                            <div class="demo-highlights">
+                                <strong>亮点：</strong>
+                                <span class="tag">娱乐性强</span>
+                                <span class="tag">观众可以参与</span>
+                                <span class="tag">展示AI的多面性</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-number">5</div>
+                        <h4>猜谜语PK</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，我们猜谜语，看谁厉害！"</div>
+                                <div class="step">小智："我出题：远看山有色，近听水无声。这是什么？"</div>
+                                <div class="step">学生："画！"</div>
+                                <div class="step">学生："该我出题了：白天工作晚上睡，不用枕头不用被，是谁？"</div>
+                                <div class="step">小智："是眼睛！"</div>
+                                <div class="step">...继续PK...</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智的知识覆盖面很广，从诗词到谜语，从数学到科学，它都能回答。这说明AI在知识获取和应用上已经非常强大。"
+                            </div>
+                            <div class="demo-highlights">
+                                <strong>亮点：</strong>
+                                <span class="tag">观众可以参与互动</span>
+                                <span class="tag">通俗易懂</span>
+                                <span class="tag">展示知识广度</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="creative">
+                    <h3><i class="fas fa-palette"></i> 创意创作演示</h3>
+
+                    <div class="demo-card">
+                        <div class="demo-number">6</div>
+                        <h4>即兴创作大赛</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，你是创意大师，给我出10个'班级口号'的创意！"</div>
+                                <div class="step">小智：（快速生成10个创意口号）</div>
+                                <div class="step">学生："哇！这些都很有创意！再给我出5个更幽默一点的！"</div>
+                                <div class="step">小智：（生成5个幽默口号）</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智的创意生成能力非常强！刚才它1分钟就出了10个创意，而且每个都不一样。这在团队讨论、项目策划中非常有用。"
+                            </div>
+                            <div class="demo-highlights">
+                                <strong>亮点：</strong>
+                                <span class="tag">展示快速生成能力</span>
+                                <span class="tag">数量多，质量高</span>
+                                <span class="tag">实用性强</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-number">7</div>
+                        <h4>写诗挑战</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，你用我们的班级名字'高一（3）班'写一首藏头诗！"</div>
+                                <div class="step">小智：（生成藏头诗）</div>
+                                <div class="step">学生："再写一首更有诗意的！"</div>
+                                <div class="step">小智：（生成新版本）</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智不仅能回答问题，还能创作诗歌。它的文学素养也很高，这对于语文学习和创意写作都有很大帮助。"
+                            </div>
+                            <div class="demo-highlights">
+                                <strong>亮点：</strong>
+                                <span class="tag">文化气息浓</span>
+                                <span class="tag">展示AI的艺术能力</span>
+                                <span class="tag">观众容易产生共鸣</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="practical">
+                    <h3><i class="fas fa-cogs"></i> 实用功能演示</h3>
+
+                    <div class="demo-card">
+                        <div class="demo-number">8</div>
+                        <h4>智能助理演示</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，今天宁波天气怎么样？"</div>
+                                <div class="step">小智：（播报天气）</div>
+                                <div class="step">学生："给我推荐3个好听的英文歌！"</div>
+                                <div class="step">小智：（推荐歌曲）</div>
+                                <div class="step">学生："帮我想一个今天的英语学习计划！"</div>
+                                <div class="step">小智：（生成学习计划）</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智是个很贴心的智能助理！天气查询、音乐推荐、学习规划，它都能帮上忙。未来，AI会成为我们生活中的得力助手。"
+                            </div>
+                            <div class="demo-highlights">
+                                <strong>亮点：</strong>
+                                <span class="tag">展示多功能</span>
+                                <span class="tag">实用性</span>
+                                <span class="tag">贴近生活</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-number">9</div>
+                        <h4>学习辅导演示</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，我不理解这个数学题：f(x)=x²-2x+1，求最小值"</div>
+                                <div class="step">小智：（一步步讲解）</div>
+                                <div class="step">学生："太详细了！再给我出3道类似的题练习一下！"</div>
+                                <div class="step">小智：（出练习题）</div>
+                                <div class="step">学生："我第一题答案是2，对吗？"</div>
+                                <div class="step">小智：（判断并解释）</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智是个很好的学习助手！它不仅能讲解，还能出题练习，帮助巩固。这对学生的自主学习非常有帮助。"
+                            </div>
+                            <div class="demo-highlights">
+                                <strong>亮点：</strong>
+                                <span class="tag">展示教育价值</span>
+                                <span class="tag">学习辅导功能</span>
+                                <span class="tag">观众容易理解</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="openclaw">
+                    <h3><i class="fas fa-rocket"></i> OpenClaw增强演示（推荐）</h3>
+                    <div class="warning-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <strong>注意：</strong> 这是"假装"的演示，展示OpenClaw的强大功能潜力！
+                    </div>
+
+                    <div class="demo-card featured">
+                        <div class="demo-number special">★</div>
+                        <h4>文件管家</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，帮我检查一下桌面的文件，有哪些需要整理的？"</div>
+                                <div class="step">小智："我检查了你的桌面，发现3个截图文件可以移到图片文件夹，2个PDF文件可以移到文档文件夹。需要我帮你整理吗？"</div>
+                                <div class="step">学生："帮我整理一下！"</div>
+                                <div class="step">小智："好的！已将截图移到~/Pictures/screenshot，PDF移到~/Documents/学习资料。整理完成！"</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智通过OpenClaw的文件管理模块，可以智能分析文件类型和内容，自动帮我们整理桌面。这对于整理学习资料、管理项目文件非常有用。"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-card featured">
+                        <div class="demo-number special">★</div>
+                        <h4>代码助手</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，我要写一个Python程序，用ESP32读取温度传感器，每10秒打印一次，帮我写代码！"</div>
+                                <div class="step">小智："好的！我已经生成了完整的代码：导入了machine库、配置I2C接口、读取温度值、添加延迟循环。代码已保存，要我现在运行吗？"</div>
+                                <div class="step">学生："再帮我写一个HTML网页，展示今天的天气预报！"</div>
+                                <div class="step">小智："好的！我已经创建了weather.html，包含蓝色渐变背景、温度显示图标、未来5天预报。"</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智通过OpenClaw的编程助手模块，可以生成各种编程语言的代码。从Python到HTML，从算法到网页，它都能写！这大大提高了我们的编程效率。"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-card featured">
+                        <div class="demo-number special">★</div>
+                        <h4>AI代理管理</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，你是OpenClaw的中央控制器，现在调用'数据分析师'代理，帮我分析一下最近一周的学习数据！"</div>
+                                <div class="step">小智："正在调用data-analyst代理...已完成！分析显示：你本周在英语上投入5小时，数学3小时，物理2小时。建议增加物理的学习时间。"</div>
+                                <div class="step">学生："再调用'创意总监'代理，帮我设计一个班级活动方案！"</div>
+                                <div class="step">小智："正在调用creative-director代理...已完成！方案是：AI科技体验日，包括3个环节——机器人大赛、代码黑客松、AI画展。"</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "OpenClaw最强大的功能是AI代理系统！小智可以调用100+个专业代理，每个代理都是某个领域的专家。数据分析师、创意总监、写作教练...你想用什么就用什么！"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-card featured">
+                        <div class="demo-number special">★</div>
+                        <h4>智能调度</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，我要在明天下午2点参加答辩，帮我安排一下准备任务！"</div>
+                                <div class="step">小智："正在调用scheduler代理...任务已安排：今天8-10点复习技术原理，10-11点练习演示，14-15点模拟答辩，20-21点准备说辞。需要设置提醒吗？"</div>
+                                <div class="step">学生："需要！提前15分钟提醒我！"</div>
+                                <div class="step">小智："已设置！明天13:45我会提醒你准备答辩。"</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智通过OpenClaw的智能调度模块，可以管理我们的时间，安排学习任务，设置提醒。它就像一个贴心的私人助理，让学习更有条理。"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-card featured">
+                        <div class="demo-number special">★</div>
+                        <h4>云端协同</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，帮我在飞书写一个项目文档，介绍小智AI机器人！"</div>
+                                <div class="step">小智："正在调用feishu-doc代理...文档已创建，标题是'小智AI机器人项目介绍'，内容包括项目背景、技术架构、创新点、应用场景。"</div>
+                                <div class="step">学生："再帮我把这个文档分享给团队成员！"</div>
+                                <div class="step">小智："已分享给团队成员，权限设置为可编辑。他们现在可以在线协作编辑了！"</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智通过OpenClaw的云端协同模块，可以调用飞书、钉钉等平台的API，帮我们创建文档、发送通知、协同工作。这对于团队协作、项目管理非常高效。"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-card featured">
+                        <div class="demo-number special">★</div>
+                        <h4>设备控制</h4>
+                        <div class="demo-content">
+                            <div class="demo-steps">
+                                <div class="step">学生："小智小智，帮我打开客厅的灯！"</div>
+                                <div class="step">小智："正在调用smart-home代理...已开启客厅灯，亮度50%。"</div>
+                                <div class="step">学生："把亮度调到80%！"</div>
+                                <div class="step">小智："亮度已调至80%。"</div>
+                                <div class="step">学生："帮我把空调开到26度！"</div>
+                                <div class="step">小智："空调已开启，温度26度，制冷模式。"</div>
+                            </div>
+                            <div class="demo-speech">
+                                <strong>学生说辞：</strong>
+                                "小智通过OpenClaw的物联网模块，可以控制智能家居设备。灯光、空调、温湿度传感器...一句话就能控制，让生活更智能、更便捷。"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-summary">
+                    <h3><i class="fas fa-list"></i> 推荐演示组合</h3>
+                    <div class="combinations">
+                        <div class="combo-card">
+                            <h4>方案A：互动娱乐型（10分钟）</h4>
+                            <p>英语外教对话 + 脑筋急转弯 + 写诗挑战</p>
+                        </div>
+                        <div class="combo-card">
+                            <h4>方案B：实用教育型（10分钟）</h4>
+                            <p>英语外教对话 + 学习辅导 + 智能助理</p>
+                        </div>
+                        <div class="combo-card">
+                            <h4>方案C：创意展示型（10分钟）</h4>
+                            <p>故事大王 + 即兴创作 + 写诗挑战</p>
+                        </div>
+                        <div class="combo-card featured-combo">
+                            <h4>方案D：OpenClaw全能型（15分钟）</h4>
+                            <p>文件管家 + 代码助手 + AI代理管理 + 云端协同</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-tips">
+                    <h3><i class="fas fa-lightbulb"></i> 演示注意事项</h3>
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>提前测试：确保网络、电量、声音都正常</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>准备备用问题：万一AI回答得不好，有预案</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>控制节奏：不要太快，给观众消化时间</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>互动提问：让观众也参与进来</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>准备说辞：每个演示前后都要有介绍和总结</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p><i class="fas fa-heart"></i> 祝演示成功，惊艳全场！</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
